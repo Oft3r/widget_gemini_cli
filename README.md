@@ -3,6 +3,9 @@
 ## 🌟 Overview
 **Gemini CLI Widget** is a stylish home screen shortcut for developers and terminal enthusiasts. It provides a beautiful, terminal-inspired (CLI) interface that acts as a **vibrant direct access point** to the official Google Gemini app on Android.
 
+## 📸 Preview
+<img src="Screenshot_20251230-165817~2.png" width="300" alt="Gemini CLI Widget Screenshot">
+
 ## 🚀 Purpose
 This project is dedicated to developers who love the terminal aesthetic and want a more personalized, "hacker-style" way to launch Gemini from their home screen. 
 
