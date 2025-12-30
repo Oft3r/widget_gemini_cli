@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_terminal"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Header / Title Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#2D2D2D"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/circle_red" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/circle_yellow" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/circle_green" />
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="oft3r@gemini-cli:~"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <!-- 
+           ASCII Banner FINAL DELIVERABLE:
+           - Includes the Block ASCII Arrow (>) on the left side.
+           - Followed by the Block ASCII "GEMINI".
+           - Size increased to 7sp.
+           - scaleX balanced at 0.75 for extra width.
+        -->
+        <TextView
+            android:id="@+id/ascii_art"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="██      ██████   ███████  ███    ███  ██  ███    ██  ██\n  ██   ██        ██       ████  ████  ██  ████   ██  ██\n    ██ ██   ███  █████    ██ ████ ██  ██  ██ ██  ██  ██\n  ██   ██    ██  ██       ██  ██  ██  ██  ██  ██ ██  ██\n██      ██████   ███████  ██      ██  ██  ██   ████  ██"
+            android:textColor="#4796E4"
+            android:textSize="7sp"
+            android:scaleX="0.75"
+            android:transformPivotX="0dp"
+            android:lineSpacingMultiplier="0.9"
+            android:letterSpacing="0.0"
+            android:typeface="monospace"
+            android:gravity="start"
+            android:singleLine="false"
+            android:maxLines="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:text="Tips for getting started:"
+            android:textColor="#E0E0E0"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="monospace"
+            android:text="1. Ask questions, edit files, or run commands."
+            android:textColor="#E0E0E0"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="monospace"
+            android:text="2. Be specific for the best results."
+            android:textColor="#E0E0E0"
+            android:textSize="9sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="3. "
+                android:textColor="#E0E0E0"
+                android:textSize="9sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="/help"
+                android:textColor="#B39DDB"
+                android:textSize="9sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text=" for more information."
+                android:textColor="#E0E0E0"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <!-- Input Bar Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_box"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="> "
+                android:textColor="#4796E4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="4dp"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="oft3r@gemini:~$ start"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Footer line -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="monospace"
+                android:text="~/VibeCode"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="monospace"
+                android:text="no sandbox"
+                android:textColor="#C3677F"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="monospace"
+                android:text="Auto (Gemini 3) /model"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
